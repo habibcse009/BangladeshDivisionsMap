@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/homepic" />
+
+    <TextView
+        android:id="@+id/txt_menulist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_home"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Divisions of Bangladesh"
+        android:textColor="#F44336"
+        android:textSize="27sp" />
+
+    <LinearLayout
+        android:id="@+id/layer01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_menulist"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/innerlayer01"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_dhaka"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:text="Dhaka"
+                android:textColor="#123"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn_chittagong"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:text="Chittagong"
+                android:textColor="#123"
+                android:textSize="22sp" />
+        </LinearLayout>
+        //layer2
+
+       <LinearLayout
+            android:id="@+id/innerlayer02"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_sylhet"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:text="Sylhet"
+                android:textColor="#123"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn_rajshahi"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:text="Rajshahi"
+                android:textColor="#123"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        //layer 3
+        <LinearLayout
+            android:id="@+id/innerlayer03"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_barisal"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:text="Barisal"
+                android:textColor="#123"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn_rangpur"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:text="Rangpur"
+                android:textColor="#123"
+                android:textSize="22sp" />
+        </LinearLayout>
+        //layer 4
+        <LinearLayout
+            android:id="@+id/innerlayer04"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_khulna"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:text="Khulna"
+                android:textColor="#123"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn_mymensingh"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:paddingLeft="5dp"
+                android:paddingEnd="5dp"
+                android:background="@drawable/button_background"
+                android:text="Mymensingh"
+                android:textColor="#123"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.medialablk.easygifview.EasyGifView
+        android:id="@+id/easyGifView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/layer01"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/goodloading" />
+</RelativeLayout>
